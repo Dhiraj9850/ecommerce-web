@@ -1,0 +1,94 @@
+.cart-container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.cart{
+    width: 70%;
+    border: 1px solid grey;
+    margin-left: 1rem;
+}
+.cart-total{
+    width: 28%;
+    border: 1px solid rgb(176, 173, 173);
+    margin-right: 0.5rem;
+    height: 15rem;
+}
+.cart-total h3{
+    margin: 15px;
+    font-size: 23px;
+}
+.price,.sub-total{
+    margin-top: 2.2rem;
+}
+.quantity{
+    margin-top: 2rem;
+    border: 1px solid rgb(194, 192, 192);
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+.quantity .minus{
+  margin-right: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.quantity .plus{
+    margin-right: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.quantity input{
+    width: 50px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+.breadcrumb{
+    background-color: whitesmoke;
+    padding: 6px;
+}
+.breadcrumb-item{
+    font-size: 19px;
+}
+.sub-totals{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7px;
+    border-bottom: 1px solid rgb(194, 193, 193);
+}
+.sub-totals .name{
+    width: 80%;
+    color: rgb(119, 116, 116);
+    font-size: 17px;
+    margin-left: 15px;
+}
+.sub-totals .value{
+    color: rgb(119, 116, 116);
+    font-size: 17px;
+}
+.totals{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.totals .name{
+    width: 77%;
+    color: rgb(41, 40, 40);
+    font-size: 20px;
+    margin-left: 15px;
+}
+.totals .value{
+    color: rgb(41, 40, 40);
+    font-size: 20px;
+}
+.btn-success{
+    margin: auto;
+}
+#check{
+    width: 350px;
+    margin: 12px 15px ;
+    border-radius: 18px;
+}

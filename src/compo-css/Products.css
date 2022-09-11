@@ -1,0 +1,42 @@
+.productItems{
+    width: 100%;
+    margin: 60px auto;
+   
+}
+.table{
+    width: 100%;
+    margin-left: 3rem;
+    
+}
+td img{
+    height: 100px;
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(77, 76, 76, 0.2), 0 6px 20px 0 rgba(51, 50, 50, 0.19);
+}
+td img:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+}
+tr{
+    color: rgb(14, 79, 79);
+}
+td input{
+    width:50px;
+    padding: 3px;
+    outline: none;
+}
+.buy .bi-cart-plus{
+    font-size: 1.9rem;
+    margin-left: 10px;
+    top: 30px;
+    cursor: pointer;
+}
+.bi-cart-plus:hover{
+    color: rgb(84, 158, 158);
+}
+.check{
+   height: 14px;
+   /* margin-top: 10px; */
+}

@@ -1,0 +1,31 @@
+.Header{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    background-color:  whitesmoke;
+}
+
+.Header .one{
+     width: 20%;
+}
+.search{
+    margin-left: 30%;
+    width: 30%;
+}
+.one button, .two button{
+    border: 1px solid rgb(173, 172, 172);
+}
+.search input{
+    outline: none;
+    width: 19rem;
+    border: 1px solid rgb(173, 172, 172);
+    padding: 5px;
+    border-radius: 7px;
+}
+.dropdown-menu button{
+    border: none;
+}
+
