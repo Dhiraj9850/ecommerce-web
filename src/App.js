@@ -8,7 +8,7 @@ const App = () => {
   
 
   const [cartItems, setCartItems] = useState([]);
- 
+  
   const handleAddProduct=(product)=>{
     const productExist = cartItems.find((item)=>item.id===product.id);
     if(productExist){

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import '../compo-css/Products.css';
 import '../compo-css/Header.css';
 import Data from '../data/data';
@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom';
 const Products = ({handleAddProduct}) => {
 
     const [category, setCategory] = useState(Data);
- 
+    const [search, setSearch] = useState('');
+
+
     const filterCategory = (catItem) => {
         const result = Data.filter((curData) => {
             return curData.category === catItem;
@@ -16,7 +18,12 @@ const Products = ({handleAddProduct}) => {
        
     }
 
+    const searchProducts = category.filter(name=>{
+        return name.name.toLowerCase().includes(search.toLowerCase())
+    })
+ 
     
+   
 
     return (
         <div>
@@ -45,7 +52,7 @@ const Products = ({handleAddProduct}) => {
                 </div>
 
                 <div className="search">
-                    <input type="search" name="search" id="search" placeholder=" Search" />
+                    <input type="search" name="search" id="search" placeholder=" Search" value={search} onChange={e=>setSearch(e.target.value)} />
                 </div>
 
                 <div className="add-cart">
@@ -77,7 +84,7 @@ const Products = ({handleAddProduct}) => {
                     </thead>
                     <tbody>
 
-                        {category.map((values, id) => {
+                        {searchProducts.map((values, id) => {
                             const { image, name, color, price } = values
                             return (
                                 <tr key={id}>
